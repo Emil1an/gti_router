@@ -1,0 +1,18 @@
+[project]
+name = "gti-router"
+version = "0.1.0"
+description = "GTI Router - Nodo edge para captura y transmisión de video RTSP"
+requires-python = ">=3.11"
+dependencies = [
+    "PyYAML",
+    "aioboto3",
+    "onvif-zeep",
+    "systemd-python"
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "pytest-asyncio",
+    "moto"
+]
